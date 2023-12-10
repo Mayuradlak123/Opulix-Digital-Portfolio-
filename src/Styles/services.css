@@ -1,0 +1,47 @@
+.service {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.service .service-title h3 {
+    color: #DCC132;
+    font-family: 'Audiowide';
+    font-size: 72px;
+    font-weight: 400;
+    line-height: normal;
+}
+.service .service-title{
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.service .service-title p {
+    text-align: center;
+    font-size: 19px;
+    font-weight: 400;   
+}
+
+
+.service .service-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   
+}
+.service .service-item span{
+    color: #FFF;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 62.006px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.service .service-item img {
+    height: 400px;
+    width: 650px; 
+}

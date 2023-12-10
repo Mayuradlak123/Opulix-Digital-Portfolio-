@@ -8,6 +8,7 @@ import AboutUs from './pages/AboutUs'
 import Services from './pages/Services'
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Work from './pages/Work'
+import TermConditions from './pages/TermConditions'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -21,7 +22,7 @@ function App() {
            <Route  path="/services" Component={Services} />
            <Route  path="/our-work" Component={Work} />
            <Route  path="/about-us" Component={AboutUs} />
-           <Route  path="/term-condition" Component={PrivacyPolicy} />
+           <Route  path="/term-condition" Component={TermConditions} />
            <Route  path="/privacy-policy" Component={PrivacyPolicy} />
            <Route  path="/contact-us" Component={Home} />
            <Route  path="/case-study" Component={Home} />

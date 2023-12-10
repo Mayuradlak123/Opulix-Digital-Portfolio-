@@ -1,0 +1,25 @@
+.get-in-touch {
+    padding: 4% 0%;
+   
+    width: 100%;
+    background: rgb(131, 58, 180);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.get-in-touch button {
+    display: inline-flex;
+padding: 12.001px 36.003px;
+justify-content: center;
+align-items: center;
+gap: 12.001px;
+border-radius: 10px;
+background-color: #ffffff;
+
+color: #000000;
+}
+
+

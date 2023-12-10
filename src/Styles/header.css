@@ -1,0 +1,40 @@
+.header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  justify-content: center;
+}
+.header .header-item {
+    width: 30% ;
+    border-radius: 16.375px;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0px 4.8px 7.201px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(48.003746032714844px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0% 1%;
+    margin-top:2% ;
+    margin-bottom: 4%;
+    height: 9vh;
+}
+.header .header-item .explore button {
+    background-color: #000000;
+    padding: 8px 20px;
+    border-radius: 6.375px;
+    outline: none;
+}
+.header .header-item .contact button {
+    background-color: #ffffff;
+    padding: 8px 20px;
+    border-radius: 6.375px;
+    outline: none;
+    color: #000000;
+}
+.header .header-item .group-image img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 150px;
+}

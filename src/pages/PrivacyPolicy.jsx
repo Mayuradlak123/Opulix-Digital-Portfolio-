@@ -1,11 +1,13 @@
 import React from 'react'
+import GetInTouch from '../components/GetInTouch'
 import "../Styles/privacy.css"
 import PrivacyImage from "../assets/privacy.png"
+import Header from '../components/Header'
 const PrivacyPolicy = () => {
   return (
     <div className='privacy'>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway"></link>
-      <div className="privacy-header">
+      <Header/>
+     <div className="privacy-header">
         <h3> Privacy Policy </h3>
         <p className=' py-2 '>OPULIX DIGITAL PVT, IS RESPONSIBLE FOR THE PROCESSING OF PERSONAL DATA AS SHOWN IN THIS PRIVACY STATEMENT.</p>
         <span className=' title-text pt-8 pb-4 '> PERSONAL DATA THAT WE PROCESS</span>
@@ -55,13 +57,12 @@ const PrivacyPolicy = () => {
             HOW WE PROTECT PERSONAL DATA:</p>
           <span>
             Opulix Digital takes the protection of your data seriously and takes appropriate measures to prevent misuse, loss, unauthorized access, unwanted disclosure, and unauthorized modification counteract. If you have the impression that your data is not properly secured or there are indications of misuse, please contact our customer service or via info@opulixdigital.com</span>
-          <div className='footer-section'>
-            <div> 
-              <img src={PrivacyImage} alt="" />
-            </div>
-          </div>
+         
         </div>
       </div>
+      
+           <GetInTouch/>
+        
     </div>
   )
 }

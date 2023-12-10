@@ -1,10 +1,8 @@
 import * as React from "react";
 
-const  Home=(props)=> {
+const Home = (props) => {
   return (
-    <div>
-      
-    </div>
+  <div></div>
   );
 }
 

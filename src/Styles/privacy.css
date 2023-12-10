@@ -5,13 +5,16 @@
     /* flex-direction: column; */
     height: 100vh;
 }
-
 .privacy .privacy-header {
     padding: 0% 5%;
+    padding-bottom: 4%;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+.privayc h3{
+    font-family: 'Audiowide';
 }
 .privacy ul{
     list-style-type: disc;
@@ -36,14 +39,4 @@
     font-weight: 400;
     line-height: normal;
 }
-.footer-section{
-  
-    width:  100%;
-    background-color:  lightgray 50% / cover no-repeat, #F5F5F5;
-    height: 30vh;
-}
-.footer-section img {
-    height: 20vh;
-    width: 20%;
-    padding: 10px; 
-}
+

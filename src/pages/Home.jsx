@@ -6,6 +6,7 @@ import ImagePlace from "../assets/ImagePlace.png"
 import ImagePlaceHolder from "../assets/ImagePlaceHolder.png"
 import JHImage from "../assets/JHImage.png"
 import ServiceSlider from "../components/ServiceSlider";
+import Footer from "../components/Footer";
 import "../Styles/home.css"
 import GetInTouch from "../components/GetInTouch";
 const Home = (props) => {
@@ -73,6 +74,7 @@ const Home = (props) => {
       </div>
     </div>
       <GetInTouch/>
+      <Footer/>
     </>
   );
 }

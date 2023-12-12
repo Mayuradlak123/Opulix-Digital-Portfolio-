@@ -12,7 +12,7 @@ const PrivacyPolicy = () => {
         <p className=' py-2 '>OPULIX DIGITAL PVT, IS RESPONSIBLE FOR THE PROCESSING OF PERSONAL DATA AS SHOWN IN THIS PRIVACY STATEMENT.</p>
         <span className=' title-text pt-8 pb-4 '> PERSONAL DATA THAT WE PROCESS</span>
         <div className=" privacy-text">
-          <p>Opulix Digital processes your personal data because you use our services and/or because you provide them to our organization. Below is an overview of the personal data that we process:</p>
+          <p>Opulix Digital processes your personal data because you use our services and/or because you provide them to our organization. Below is an overview of  the personal data that we process:</p>
           <ul className='privacy-text'>
             <li> First and last name </li>
             <li> Address Details </li>

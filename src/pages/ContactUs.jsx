@@ -1,9 +1,13 @@
 import React from 'react'
+import Footer from '../components/Footer'
 
-function ContactUs() {
+const  ContactUs=()=> {
   return (
     <div>
-      
+      <div className="contact-us">
+
+      </div>
+      <Footer/>
     </div>
   )
 }

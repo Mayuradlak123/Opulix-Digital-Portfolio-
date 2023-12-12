@@ -1,0 +1,42 @@
+.about-us{
+    background: #121212;
+    width: 90%;
+    padding: 0 5%;
+    height: auto;
+}
+.about {
+    
+    width: 100%;
+    background: #121212;
+}
+.about-us h3{
+    color: #DCC132;
+    font-family: 'Audiowide';
+    font-size: 72px;
+   
+    font-weight: 400;
+    line-height: normal;
+}
+.about-us .about-text{
+    display: flex;
+    flex-direction: column;
+    
+}
+.about-us span {
+    color: #C8C8C8;
+font-family: 'Raleway';
+font-size: 19px;
+font-style: normal;
+margin-top: 15px;
+font-weight: 400;
+line-height: 160%; /* 38.4px */
+}
+
+ .about-us .about-title{
+    color: #FFF;
+font-family: 'Raleway';
+font-size: 25px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+ }

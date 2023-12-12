@@ -2,6 +2,7 @@
     display: flex;
     width: 100%;
     align-items: center;
+    background: #121212;
   justify-content: center;
 }
 .header .header-item {

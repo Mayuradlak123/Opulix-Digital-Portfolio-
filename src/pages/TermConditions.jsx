@@ -13,14 +13,14 @@ const TermConditions = () => {
         </div>
         <div className='term-text'>
           <div className='items'>
-            <p>
+        
               These terms and conditions ("Agreement") govern the use of opulixdigital.com ("the Website") and the services provided by Opulix Digital Pvt. Ltd., 1139-1140 Sun Gravitas, Radio Mirchi Road, Ahmedabad, Gujarat. 380051 ("Opulix Digital," "we," or "us"). By accessing the Website or using our services, you agree to be bound by this Agreement. If you do not agree with any part of this Agreement, you must refrain from using the Website and our services.
-            </p>
+            
           </div>
 
           <span > Services offered </span>
           <div className='items'>
-            <p> Opulix Digital provides a range of creative services, including but not limited to Brand Design, 3D Modelling, Logo Design, Stationery Design, Marketing, Performance Marketing, Google Marketing, Facebook Marketing, All Digital Marketing Services, Web Design, Web Development, Application Design and Development, Software Design and Development, Automation, Email Marketing, post-production, consulting, and product design. </p>
+             Opulix Digital provides a range of creative services, including but not limited to Brand Design, 3D Modelling, Logo Design, Stationery Design, Marketing, Performance Marketing, Google Marketing, Facebook Marketing, All Digital Marketing Services, Web Design, Web Development, Application Design and Development, Software Design and Development, Automation, Email Marketing, post-production, consulting, and product design. 
           </div>
           <span> Payment and Project Terms </span>
 
@@ -70,7 +70,7 @@ const TermConditions = () => {
             </li>
           </div>
           <span> Contact Information </span>
-          <div className='items'>          <p> Users can contact Opulix Digital regarding privacy concerns or questions about the terms and conditions via email at info@opulixdigital.com or by postal mail at 1139-1140 Sun Gravitas, Radio Mirchi Road, Ahmedabad, Gujarat. 380051 </p>
+          <div className='items'>           Users can contact Opulix Digital regarding privacy concerns or questions about the terms and conditions via email at info@opulixdigital.com or by postal mail at 1139-1140 Sun Gravitas, Radio Mirchi Road, Ahmedabad, Gujarat. 380051 
           </div>
         </div>
         <div>

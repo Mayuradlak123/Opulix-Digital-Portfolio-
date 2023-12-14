@@ -1,0 +1,16 @@
+
+.home-slider{
+   width: 100%;
+   height: auto; 
+   padding: 5%;
+}
+.custom-carousel .rec-arrow {
+    display: none !important;
+  }
+  .slide-item {
+    width: 100%;
+  }
+  .home-slider img{
+    width: 600px;
+    height: 80vh;
+  }

@@ -9,23 +9,25 @@ import ServiceSlider from "../components/ServiceSlider";
 import Footer from "../components/Footer";
 import "../Styles/home.css"
 import GetInTouch from "../components/GetInTouch";
+import HomeSlider from "../components/HomeSlider";
 const Home = (props) => {
   return (
     <>
     <div className="home-container">
-      <div className="image-container">
+      <HomeSlider/>
+      {/* <div className="image-container">
         <div className="images"><img src={Image1} alt="" /></div>
         <div className="images"><img src={Image2} alt="" /></div>
         <div className="images"><img src={Image3} alt="" /></div>
-      </div>
+      </div> */}
       <div className="home-text">
-        <h3>
+        <div className="home-qoute">
 
-
-          Weaving Technology, <br />
-          Creativity, and Strategy <br />
-          for Your Brand's Masterpiece
-        </h3>
+       
+          <div>  Weaving &nbsp; <h4> Technology, </h4> </div>
+         <div> <h4> Creativity,</h4>  &nbsp;and  &nbsp;<h4> Strategy,</h4> <br /> </div>
+          <div> for Your Brand's Masterpiece </div>
+        </div>
       </div>
       <div className="services-container">
         <div className="home-services">
@@ -40,7 +42,7 @@ const Home = (props) => {
       <div className="works">
         <div className="work-text py-4">
           <h3> Our Work.</h3>
-         <div className="flex justify-between"> <p>Opulix Digital has grown into a global agency, partnering with luxury brands <br /> across the world since its inception</p>
+         <div className="flex justify-between"> <span>Opulix Digital has grown into a global agency, partnering with luxury brands <br /> across the world since its inception</span>
         <a href="" className="text-white">View More</a> </div>
         </div>
         <div className="work-cards">

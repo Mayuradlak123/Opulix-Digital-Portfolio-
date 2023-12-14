@@ -1,9 +1,10 @@
 .privacy {
     font-size: 17px;
+    background: #121212;
     width: 100%;
     line-height: 160%;
     /* flex-direction: column; */
-    height: 100vh;
+   
 }
 .privacy .privacy-header {
     padding: 0% 5%;

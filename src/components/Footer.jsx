@@ -21,7 +21,7 @@ const Footer = () => {
                 </div>
                 <div className="social-icon-container">
                     <div className=' social-icons flex flex-column '>  <i className='my-1'> <a href="" className='text-white'> <FaBehance /> </a></i>
-                        <i className='my-1 text-white'> <a href="" className='text-white'>    <CiBasketball /></a></i>
+                        <i className='my-1 text-white'> <a href="" className='text-white'>    <CiBasketball /> </a></i>
                         <i className='my-1 text-white'> <a href="" className='text-white'> <CiLinkedin /></a></i>
                         <i className='my-1 text-white'> <a href="" className='text-white'> <CiInstagram /></a></i>
                         <i className='my-1 text-white'> <a href="" className='text-white'> <BsTwitterX /></a></i>

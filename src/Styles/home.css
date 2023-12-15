@@ -2,8 +2,6 @@
     display: flex;
     padding: 2%;
     width: 100%;
-
-
     flex-direction: column;
     background: #121212;
     height: auto;
@@ -37,25 +35,29 @@
 
 .home-container .home-text .home-qoute {
     width: 100%;
- height: 30vh;
- 
-   display: flex;
-  flex-direction: column;
+    height: 30vh;
+
+    display: flex;
+    flex-direction: column;
     font-family: 'Audiowide';
     font-size: 52px;
     font-weight: 400;
     line-height: normal;
 }
+
 .home-container .home-text .home-qoute div {
     display: flex;
-    line-height: 1.2; /* Adjust the normal line height value as needed */
+    line-height: 1.2;
+    /* Adjust the normal line height value as needed */
 }
 
-.home-container .home-text .home-qoute:hover div{
+.home-container .home-text .home-qoute:hover div {
     transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
-    line-height: 1.5; /* Adjust the hover line height value as needed */
+    line-height: 1.5;
+    /* Adjust the hover line height value as needed */
 }
-.home-container .home-text .home-qoute:hover h4{
+
+.home-container .home-text .home-qoute:hover h4 {
     color: #DCC132;
 }
 
@@ -106,6 +108,7 @@
     justify-content: center;
 
 }
+
 .works .work-text h3 {
     display: flex;
     color: #FFF;
@@ -115,10 +118,11 @@
     font-weight: 700;
     line-height: 150%;
     width: 55%;
-    border-bottom:1px solid #C8C8C8;
+    border-bottom: 1px solid #C8C8C8;
 }
 
-.works .work-text,.card-text p {
+.works .work-text,
+.card-text p {
     color: #FFF;
     font-family: 'Raleway';
     font-size: 21px;
@@ -128,10 +132,10 @@
 }
 
 .works .work-cards {
-    
+
     display: flex;
     padding: 2% 0;
-   
+
     align-items: center;
     height: auto;
     justify-content: space-between;
@@ -140,59 +144,70 @@
 .works .work-cards .work-card {
     display: flex;
     flex-direction: column;
-  
+
     padding: 1%;
 }
-.works .work-cards .work-card h5{
+
+.works .work-cards .work-card h5 {
     color: #FFF;
-font-family: 'Raleway';
-font-size: 22px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+    font-family: 'Raleway';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
+
 .work-card .card-text {
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
-.work-card img{
+
+.work-card img {
     height: 500px;
-   width: 600px;
+    width: 600px;
 }
+
 .work-card .card-text {
     border-bottom: 1px solid #C8C8C8;
 }
-.content-container{
+
+.content-container {
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
- 
+
 }
-.content-container p{
+
+.content-container p {
     color: #FFF;
     text-align: center;
     font-family: 'Raleway';
     font-size: 19px;
     font-style: normal;
     font-weight: 500;
-    line-height: 157.023%; /* 50.247px */;
+    line-height: 157.023%;
+    /* 50.247px */
+    ;
 }
-.content-container .btn{
+
+.content-container .btn {
 
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.content-container .black-btn{
+
+.content-container .black-btn {
     background-color: #000000;
     padding: 8px 20px;
     border-radius: 6.375px;
     outline: none;
-    
+
 }
-.content-container .white-btn{
+
+.content-container .white-btn {
     background-color: #ffffff;
     padding: 8px 20px;
     border-radius: 6.375px;

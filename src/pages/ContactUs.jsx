@@ -2,6 +2,16 @@ import React from 'react'
 import Footer from '../components/Footer'
 import "../Styles/contact-us.css"
 const ContactUs = () => {
+  const changeColor = (e) => {
+    if (e.target.style.backgroundColor) {
+      e.target.style.backgroundColor = "";
+    }
+    else {
+      e.target.style.backgroundColor = "#DCC132"
+    }
+  }
+
+
   return (
     <div>
       <div className="contact-us">
@@ -31,13 +41,13 @@ const ContactUs = () => {
                   SERVICES REQUIRED
                 </label>
                 <div className="required-service">
-                  <div className='required-service-item1'>Digital Marketing</div>
-                  <div className='required-service-item2'>Branding</div>
-                  <div className='required-service-item3'>Web Design</div>
-                  <div className='required-service-item4'>App Design </div>
-                  <div className='required-service-item5'>Development</div>
-                  <div className='required-service-item6'>Other </div>
-                  <div className='required-service-item7'>Software Development</div>
+                  <div onClick={changeColor} className='required-service-item1'>Digital Marketing</div>
+                  <div onClick={changeColor} className='required-service-item2'>Branding</div>
+                  <div onClick={changeColor} className='required-service-item3'>Web Design</div>
+                  <div onClick={changeColor} className='required-service-item4'>App Design </div>
+                  <div onClick={changeColor} className='required-service-item5'>Development</div>
+                  <div onClick={changeColor} className='required-service-item6'>Other </div>
+                  <div onClick={changeColor} className='required-service-item7'>Software Development</div>
                 </div>
               </div>
               <div className="contact-email">
@@ -51,15 +61,15 @@ const ContactUs = () => {
                   <input type="text" placeholder='Your number here' className='contact-phone' /> </div>
               </div>
               <div className="contact-submit">
-            <button>Submit Request</button>
-            <span>
-            At Opulix Digital, every project is a masterpiece, meticulously crafted to resonate excellence, innovation, and impact. Join us at Opulix Digital, and step into a realm where technology, creativity, and strategy converge, ensuring a digital presence that is not just felt but is unforgettable.
-            </span>
-            <span>  Your journey to digital distinction begins here!</span>
-          </div>
+                <button>Submit Request</button>
+                <span>
+                  At Opulix Digital, every project is a masterpiece, meticulously crafted to resonate excellence, innovation, and impact. Join us at Opulix Digital, and step into a realm where technology, creativity, and strategy converge, ensuring a digital presence that is not just felt but is unforgettable.
+                </span>
+                <span>  Your journey to digital distinction begins here!</span>
+              </div>
             </div>
           </div>
-         
+
         </div>
       </div>
       <Footer />

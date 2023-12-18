@@ -1,40 +1,40 @@
 import React from 'react'
 import Header from '../components/Header'
 import GetInTouch from '../components/GetInTouch'
-import Branding from "../assets/service/branding.png"
-import App from "../assets/service/App.png"
-import Digital from "../assets/service/Digital.png"
-import Website from "../assets/service/Website.png"
-import UI from "../assets/service/UI.png"
+import Branding from "../assets/Services_Page_Laptop/Branding.png"
+import App from "../assets/Services_Page_Laptop/App-D.png"
+import Digital from "../assets/Services_Page_Laptop/DM.png"
+import Website from "../assets/Services_Page_Laptop/Web-D.png"
+import UI from "../assets/Services_Page_Laptop/UIUX.png"
 import "../Styles/services.css"
 const Services = () => {
   return (
     <div>
-      <Header />
       <div className="service">
+      <Header />
         <div className="service-title">
           <h3 className=''>Services</h3>
           <p>Check out our selection of our recent <br />
             projects and case studies</p>
         </div>
-        <div className="service-item">
-          <span> Brand Identity</span>
+        <div className="service-item mt-8">
+          <span className="py-3"> Brand Identity</span>
           <img src={Branding} alt="" />
         </div>
         <div className="service-item">
-          <span> Website Development </span>
+          <span className="py-3"> Website Development </span>
           <img src={Website} alt="" />
         </div>
         <div className="service-item">
-          <span> App Development </span>
+          <span className="py-3"> App Development </span>
           <img src={App} alt="" />
         </div>
         <div className="service-item">
-          <span>UI/UX Design </span>
+          <span className="py-3">UI/UX Design </span>
           <img src={UI} alt="" />
         </div>
         <div className="service-item">
-          <span>Digital Marketing </span>
+          <span className="py-3">Digital Marketing </span>
           <img src={Digital} alt="" />
         </div>
       </div>

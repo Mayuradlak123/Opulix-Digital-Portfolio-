@@ -3,8 +3,12 @@ import Carousel from "react-elastic-carousel";
 import Precious from "../assets/Precious/Precious04.jpg";
 import "../Styles/home-slider.css"
 import Header from "./Header"
+import Image1 from "../assets/home/img1.png";
+import Image2 from "../assets/home/img2.png";
+import Image3 from "../assets/home/img3.png";
+import Image4 from "../assets/home/main.png";
 const HomeSlider = () => {
-  const items = [Precious, Precious, Precious, Precious, Precious];
+  const items = [Precious,Image4, Image1, Image2, Image3];
 
   const breakPoints = [
     { width: 1, itemsToShow: 1 },
@@ -20,8 +24,7 @@ const HomeSlider = () => {
         className='custom-carousel'
         breakPoints={breakPoints}
 
-        autoPlaySpeed={100}
-        enableAutoPlay={true}
+     
         disableArrows={true}
 
       >

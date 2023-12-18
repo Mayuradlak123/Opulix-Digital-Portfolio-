@@ -1,7 +1,5 @@
 import * as React from "react";
-import Image1 from "../assets/image1.png";
-import Image2 from "../assets/image2.png";
-import Image3 from "../assets/image3.png";
+
 import ImagePlace from "../assets/ImagePlace.png"
 import ImagePlaceHolder from "../assets/ImagePlaceHolder.png"
 import JHImage from "../assets/JHImage.png"
@@ -32,10 +30,7 @@ const Home = (props) => {
         <div className="services-container">
           <div className="home-services ">
             <h3>Our Services.</h3>
-          
-
               <span>A strategic and tactical approach is essential for long-term goals, but what is even more important is keeping deadlines and promises.</span>
-            
           </div>
         </div>
         <ServiceSlider />
@@ -49,20 +44,20 @@ const Home = (props) => {
           <div className="work-cards">
             <div className="work-card">
               <img src={JHImage} alt="" />
-              <div className="card-text py-2 px-2"> <p>2023</p> <p>India</p> </div>
-              <h5>JH Branding.</h5>
+              <div className="card-text py-4 px-2"> <p>2023</p> <p>India</p> </div>
+              <h5 className="py-2">JH Branding.</h5>
             </div>
             <div className="work-card">
               <img src={ImagePlace} alt="" />
-              <div className="card-text py-2 px-2"> <p>2023</p> <p>India</p> </div>
+              <div className="card-text py-4 px-2"> <p>2023</p> <p>India</p> </div>
 
-              <h5>Majestic Mercy</h5>
+              <h5 className="py-2">Majestic Mercy</h5>
             </div>
             <div className="work-card">
               <img src={ImagePlaceHolder} alt="" />
-              <div className="card-text py-2 px-2"> <p>2023</p> <p>India</p> </div>
+              <div className="card-text py-4 px-2"> <p>2023</p> <p>India</p> </div>
 
-              <h5>Precious</h5>
+              <h5 className="py-2">Precious</h5>
             </div>
           </div>
         </div>

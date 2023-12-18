@@ -19,13 +19,25 @@
 .carousel-controls button{
     outline: none;
 }
+.carousel-container .content-container{
+    display: flex;
+  
+ 
+    align-items: flex-start;
+}
 .carousel-container .content-container,.image-container {
     flex: 1;
-    padding: 20px;
+  
     width: 50%;
     opacity: 1;
     transition: transform 1s ease-in;
-    ;
+
+}
+
+.carousel-container .content-container P{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .content-container h2 {

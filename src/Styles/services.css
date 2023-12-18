@@ -31,18 +31,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;   
+    height: 700px;
+    /* justify-content center;    */
 }
 .service .service-item span{
     color: #FFF;
     text-align: center;
-    font-family: Raleway;
+    font-family: 'Raleway';
     font-size: 62.006px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
 }
 .service .service-item img {
+    margin: 0;
+    padding: 0;
     height: 400px;
+ 
     width: 650px; 
 }

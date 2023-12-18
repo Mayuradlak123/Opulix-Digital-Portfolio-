@@ -79,11 +79,11 @@ const ServiceSlider = () => {
     <div className="slider-container">
       <div className="carousel-container">
         <div className="content-container">
-          <div className="desc-container">
+          <div className="desc-container py-3">
             <h2>{items[currentIndex].title}</h2>
-            <p>{items[currentIndex].description}</p>
+            <p className='py-3'>{items[currentIndex].description}</p>
           </div>
-          <div className="carousel-controls">
+          <div className="carousel-controls py-2">
             <button onClick={prevSlide}>
               <svg xmlns="http://www.w3.org/2000/svg" width="39" height="40" viewBox="0 0 39 40" fill="none">
               <path d="M25.0579 31.0137C25.1694 31.1252 25.2578 31.2576 25.3182 31.4033C25.3785 31.549 25.4096 31.7051 25.4096 31.8628C25.4096 32.0205 25.3785 32.1766 25.3182 32.3223C25.2578 32.468 25.1694 32.6004 25.0579 32.7119C24.9464 32.8234 24.814 32.9118 24.6683 32.9721C24.5226 33.0325 24.3665 33.0636 24.2088 33.0636C24.0511 33.0636 23.895 33.0325 23.7493 32.9721C23.6036 32.9118 23.4712 32.8234 23.3597 32.7119L11.3588 20.7109C11.2472 20.5995 11.1587 20.4671 11.0983 20.3214C11.0379 20.1757 11.0068 20.0196 11.0068 19.8619C11.0068 19.7041 11.0379 19.548 11.0983 19.4023C11.1587 19.2566 11.2472 19.1242 11.3588 19.0128L23.3597 7.01185C23.5849 6.78666 23.8903 6.66016 24.2088 6.66016C24.5273 6.66016 24.8327 6.78666 25.0579 7.01185C25.2831 7.23704 25.4096 7.54246 25.4096 7.86092C25.4096 8.17938 25.2831 8.4848 25.0579 8.70998L13.9045 19.8619L25.0579 31.0137Z" fill="#C8C8C8" />

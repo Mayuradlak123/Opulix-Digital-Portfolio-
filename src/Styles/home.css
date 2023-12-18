@@ -72,7 +72,7 @@
     width: 90%;
     display: flex;
 
-    padding: 2% 5%;
+    padding: 2% 2%;
     justify-content: space-between;
     align-items: center;
 }
@@ -84,11 +84,13 @@
     font-size: 52px;
     font-style: normal;
     font-weight: 700;
+    width: 30%;
     line-height: 150%;
     /* 108px */
 }
 
-.home-container .home-services p {
+.home-container .home-services span {
+    width: 70%;
     border-top: 1px solid #C8C8C8;
     color: #FFF;
     font-family: Raleway;
@@ -105,10 +107,19 @@
     padding: 2% 5%;
 
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
 
 }
-
+.works .work-text {
+    
+   display: flex;
+   justify-content:flex-end;
+   align-items: flex-end;
+   flex-direction: column; 
+}
+.works .work-text span{
+    border-top: 1px solid #C8C8C8;
+}
 .works .work-text h3 {
     display: flex;
     color: #FFF;
@@ -118,11 +129,10 @@
     font-weight: 700;
     line-height: 150%;
     width: 55%;
-    border-bottom: 1px solid #C8C8C8;
+   
 }
 
-.works .work-text,
-.card-text p {
+.works .work-text,.card-text p {
     color: #FFF;
     font-family: 'Raleway';
     font-size: 21px;

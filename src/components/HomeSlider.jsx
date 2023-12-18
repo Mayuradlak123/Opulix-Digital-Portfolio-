@@ -13,10 +13,9 @@ const HomeSlider = () => {
     { width: 1200, itemsToShow: 2.5 },
   ];
   return (
+    <>
     <div className='home-slider'>
-      <div className="home-carousel">     
-       {/* <Header />  */}
-       </div>
+    
       <Carousel
         className='custom-carousel'
         breakPoints={breakPoints}
@@ -35,6 +34,10 @@ const HomeSlider = () => {
       </Carousel>
 
     </div>
+    <div className="home-carousel">     
+       <Header /> 
+       </div>
+    </>
   )
 }
 

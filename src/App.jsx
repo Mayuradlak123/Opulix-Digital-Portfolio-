@@ -11,6 +11,7 @@ import Work from './pages/Work'
 import TermConditions from './pages/TermConditions'
 import ContactUs from './pages/ContactUs'
 import CaseStudy from './components/CaseStudy'
+import NotFound from './components/NotFound'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -28,7 +29,7 @@ function App() {
            <Route  path="/privacy-policy" Component={PrivacyPolicy} />
            <Route  path="/contact-us" Component={ContactUs} />
            <Route  path="/case-study" Component={CaseStudy} />
-           
+           <Route path='/*' Component={NotFound} />
         </Routes>
       </BrowserRouter>
     </div>

@@ -13,10 +13,10 @@ const Footer = () => {
                         <p className='footer-email'>info@opulixdigital.com</p>
                     </div>
                     <div className="footer-items">
-                        <Link to='/about'>About</Link>
-                        <Link to='/work'>Work</Link>
+                        <Link to='/about-us'>About</Link>
+                        <Link to='/our-work'>Work</Link>
                         <Link to='/services'>Services</Link>
-                        <Link to='/contact'>Contact</Link>
+                        <Link to='/contact-us'>Contact</Link>
                     </div>
                 </div>
                 <div className="social-icon-container">

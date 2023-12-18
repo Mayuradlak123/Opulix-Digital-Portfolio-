@@ -11,6 +11,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    width: 100%;
 }
 
 .our-work .work-item .work-title h3 {
@@ -18,33 +19,137 @@
     font-family: 'Audiowide';
     font-size: 72px;
     font-weight: 400;
+
     line-height: normal;
 }
 
-.our-work .work-title p {
+.our-work .work-title span {
     font-size: 19px;
-    font-weight: 400;   
+    font-weight: 400;
 }
 
-.our-work .work-item .product{
+.our-work .product-items {
+    width: 100%;
+}
+
+.our-work .product {
     display: flex;
+    width: 100%;
     flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   font-weight: 700;
-   margin-top: 10%;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    padding: 50px 0;
 }
 
-.our-work .work-item .product span{
+.our-work .precious:hover {
+    transition: all ease-in-out 0.7s;
+    background-color: #0a3222;
+}
+
+.our-work .pa-hotel:hover {
+    transition: all ease-in-out 0.7s;
+    background-color: #013541;
+}
+
+.our-work .sk-iterior:hover {
+    transition: all ease-in-out 0.7s;
+    background-color: #e0d0b9;
+}
+
+.our-work .branding:hover {
+    transition: all ease-in-out 0.7s;
+    background-color: #e3be87;
+}
+
+.our-work .branding:hover>span {
+    transition: all ease-in-out 0.4s;
+    color: #121212;
+    font-size: 62.006px;
+    font-weight: 700;
+}
+.our-work .pa-hotel:hover>span {
+    transition: all ease-in-out 0.4s;
+   
+    font-size: 62.006px;
+    font-weight: 700;
+}
+.our-work .sk-iterior:hover>span {
+    transition: all ease-in-out 0.4s;
+    color: #121212;
+    font-size: 62.006px;
+    font-weight: 700;
+}
+.our-work .precious:hover>span {
+    transition: all ease-in-out 0.4s;
+   
+    font-size: 62.006px;
+    font-weight: 700;
+}
+
+.our-work .pa-hotel:hover .anchor a {
+    color: #DCC132;
+    visibility: visible;
+    font-weight: 400;
+    transition: all ease-in-out  0.4s;
+}
+
+.our-work .branding:hover .anchor a {
+    color: #FFF;
+    visibility: visible;
+    font-weight: 400;
+    transition: all ease-in-out 0.4s;
+}
+
+.our-work .sk-iterior:hover .anchor a {
+    color: #121212;
+    visibility: visible;
+    font-weight: 400;
+    transition: all ease-in-out 0.4s;
+}
+
+.our-work .precious:hover .anchor a {
+    color: #DCC132;
+    visibility: visible;
+    font-weight: 400;
+    transition: all ease-in-out 0.4s;
+}
+
+.our-work .product span {
     color: #FFF;
     text-align: center;
     font-family: 'Raleway' sans-serif;
-    font-size: 62.006px;
+    font-size: 52.006px;
     font-style: normal;
     font-weight: 600;
+    height: 20vh;
+    padding: 2%;
     line-height: normal;
 }
-.our-work .work-item .product img{
-  height: 400px;
-  width: 650px; 
+
+.our-work .product img:hover{
+    transition: opacity 0.1s ease 0.1s, transform 0.3s ease;
+    transform: scale(1.0);
+}
+.our-work .product .anchor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    visibility: hidden;
+    font-size: 19px;
+    padding: 1%;
+    font-weight: 400;
+}
+
+.our-work .product .anchor a {
+    color: #FFF;
+}
+
+.our-work .product img {
+    padding: 0;
+    margin: 0;
+    transition: transform 0.3s ease;
+    height: 350px;
+    width: 650px;
 }

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>HTML CSS Carousel</title>
+</head>
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+          }
+          
+          .carousel-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 50%;
+            margin: auto;
+            overflow: hidden;
+            border: 1px solid #ddd; /* Optional: Add border for better visualization */
+          }
+          
+          .content-container,
+          .image-container {
+            flex: 1;
+            padding: 20px;
+          }
+          
+          .image-container img {
+            width: 100%;
+            height: auto;
+          }
+          
+          .carousel-controls {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+          }
+          
+          button {
+            font-size: 24px;
+            cursor: pointer;
+            background: #ddd; /* Optional: Add background color for better visualization */
+            border: none;
+          }
+          
+    </style>
+  <div class="carousel-container">
+    <div class="content-container">
+      <h2>Content Title 1</h2>
+      <p>Content Description 1</p>
+      <div class="carousel-controls">
+        <button onclick="prevSlide()">❮</button>
+        <button onclick="nextSlide()">❯</button>
+      </div>
+    </div>
+    <div class="image-container">
+      <img src="https://placekitten.com/300/200" alt="Image 1">
+    </div>
+  
+  </div>
+
+  <script >
+    let currentIndex = 0;
+
+function nextSlide() {
+  currentIndex = (currentIndex + 1) % 2;
+  updateContent();
+}
+
+function prevSlide() {
+  currentIndex = (currentIndex - 1 + 2) % 2;
+  updateContent();
+}
+
+function updateContent() {
+  const titles = ['Content Title 1', 'Content Title 2','Content Title 3','Content Title 4'];
+  const descriptions = ['Content Description 1', 'Content Description 2','Content Description 3','Content Description 4'];
+  const images = ['https://placekitten.com/300/200', 'https://placekitten.com/301/200','https://placekitten.com/300/200', 'https://placekitten.com/301/200'];
+
+  document.querySelector('.content-container h2').innerText = titles[currentIndex];
+  document.querySelector('.content-container p').innerText = descriptions[currentIndex];
+  document.querySelector('.image-container img').src = images[currentIndex];
+}
+
+updateContent();
+
+  </script>
+</body>
+</html>

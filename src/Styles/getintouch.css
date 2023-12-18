@@ -1,6 +1,6 @@
 .get-in-touch {
     padding: 4% 0%;
-   
+
     width: 100%;
     background: rgb(131, 58, 180);
     background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
@@ -10,16 +10,55 @@
     align-items: center;
     justify-content: space-between;
 }
+
 .get-in-touch button {
     display: inline-flex;
-padding: 12.001px 36.003px;
-justify-content: center;
-align-items: center;
-gap: 12.001px;
-border-radius: 10px;
-background-color: #ffffff;
+    padding: 12.001px 36.003px;
+    justify-content: center;
+    align-items: center;
+    gap: 12.001px;
+    border-radius: 10px;
+    background-color: #ffffff;
 
-color: #000000;
+    color: #000000;
 }
 
+.get-drawer{
+    padding: 0% 5%;
+    height: auto;
+}
+.get-drawer .drawer-heading{
+    padding-top: 2%;
+}
+.get-drawer .drawer-heading h3 {
+    color: #DCC132;
+    font-family: 'Audiowide';
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 
+.get-drawer .drawer-heading h4 {
+    color: #FFF;
+    font-family: 'Raleway';
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.get-drawer .drawer-text{
+    color: #C8C8C8;
+font-family: 'Raleway';
+font-size: 21px;
+font-style: normal;
+font-weight: 400;
+line-height: 160%; 
+display: flex;
+flex-direction: column;
+
+/* 38.4px */
+}
+.get-drawer .drawer-text span{
+    
+}

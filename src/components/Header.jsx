@@ -21,7 +21,7 @@ const Header = () => {
 
     return (
         <>        <div className='header'>
-        
+
             <div className='header-item'>
                 {!isExplored ?
                     <>
@@ -53,7 +53,7 @@ const Header = () => {
                 </div>
             </div>
         </div>
-        <Drawer placement='left' open={open} width="100%" style={{ backgroundColor: '#121212' }}>
+            <Drawer placement='left' open={open} width="100%" style={{ backgroundColor: '#121212' }}>
                 <div>
                     <div className="contact-us">
                         <div className="close-btn">

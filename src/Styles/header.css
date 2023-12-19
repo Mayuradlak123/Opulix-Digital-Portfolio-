@@ -2,7 +2,7 @@
     display: flex;
     width: 100%;
    justify-content: center;
-   /* background: #121212; */
+   background: #121212;
  
 }
 .header .header-item {
@@ -63,4 +63,30 @@
     border-radius: 6.375px;
     outline: none;
     width: 300px;
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 5% 2%;
+    }
+    .header .header-item {
+        display: flex;
+        width: 380px;
+        height: 54px;
+        padding: 7px;
+       
+        gap: 13px;
+        flex-shrink: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .header .header-item {
+        width: 100%;
+        
+    }
 }

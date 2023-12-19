@@ -41,10 +41,15 @@
 
 .privacy .privacy-header h3 {
     color: #DCC132;
-    font-family: Audiowide;
+    font-family: 'Audiowide';
     font-size: 72px;
    
     font-weight: 400;
     line-height: normal;
 }
 
+@media (max-width: 768px){
+    .privacy .privacy-header h3{
+        font-size: 24px;
+    }
+}

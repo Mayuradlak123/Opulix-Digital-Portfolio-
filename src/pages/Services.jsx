@@ -17,25 +17,34 @@ const Services = () => {
           <p>Check out our selection of our recent <br />
             projects and case studies</p>
         </div>
-        <div className="service-item mt-8">
-          <span className="py-3"> Brand Identity</span>
+        <div className="service-item branding mt-8">
+          <span className="py-3 "> Brand Identity</span>
           <img src={Branding} alt="" />
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam in rem deleniti mollitia enim, suscipit laborum explicabo. Similique dicta, dolores ut molestias magnam atque beatae impedit. Enim deserunt quis id?</p>
         </div>
-        <div className="service-item">
-          <span className="py-3"> Website Development </span>
+        <div className="service-item website">
+          <span className="py-3 "> Website Development </span>
           <img src={Website} alt="" />
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam in rem deleniti mollitia enim, suscipit laborum explicabo. Similique dicta, dolores ut molestias magnam atque beatae impedit. Enim deserunt quis id?</p>
+
         </div>
-        <div className="service-item">
-          <span className="py-3"> App Development </span>
+        <div className="service-item app" >
+          <span className="py-3 "> App Development </span>
           <img src={App} alt="" />
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam in rem deleniti mollitia enim, suscipit laborum explicabo. Similique dicta, dolores ut molestias magnam atque beatae impedit. Enim deserunt quis id?</p>
+
         </div>
-        <div className="service-item">
-          <span className="py-3">UI/UX Design </span>
+        <div className="service-item ui-ux">
+          <span className="py-3 ">UI/UX Design </span>
           <img src={UI} alt="" />
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam in rem deleniti mollitia enim, suscipit laborum explicabo. Similique dicta, dolores ut molestias magnam atque beatae impedit. Enim deserunt quis id?</p>
+
         </div>
-        <div className="service-item">
-          <span className="py-3">Digital Marketing </span>
+        <div className="service-item digital">
+          <span className="py-3 ">Digital Marketing </span>
           <img src={Digital} alt="" />
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam in rem deleniti mollitia enim, suscipit laborum explicabo. Similique dicta, dolores ut molestias magnam atque beatae impedit. Enim deserunt quis id?</p>
+
         </div>
       </div>
       <GetInTouch />

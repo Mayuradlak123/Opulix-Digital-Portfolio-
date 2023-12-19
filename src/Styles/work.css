@@ -128,10 +128,7 @@
     line-height: normal;
 }
 
-.our-work .product img:hover{
-    transition: opacity 0.1s ease 0.1s, transform 0.3s ease;
-    transform: scale(1.0);
-}
+
 .our-work .product .anchor {
     display: flex;
     align-items: center;
@@ -150,7 +147,34 @@
 .our-work .product img {
     padding: 0;
     margin: 0;
-    transition: transform 0.3s ease;
+    transition: all ease-in-out 0.4s;
     height: 350px;
     width: 650px;
+}
+
+.our-work .product:hover img{
+    animation: grow 1s forwards;
+}
+@-webkit-keyframes grow {
+    from {
+        width: 0px;
+        height: 0px;
+    }
+
+    to {
+        height: 350px;
+        width: 650px;
+    }
+}
+
+@keyframes grow {
+    from {
+        width: 0px;
+        height: 0px;
+    }
+
+    to {
+        height: 350px;
+        width: 650px;
+    }
 }

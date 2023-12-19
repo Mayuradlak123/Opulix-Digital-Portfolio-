@@ -71,7 +71,7 @@ transition: all 0.5s ease;
 }
  .footer .footer-items-url a,p {
     color: #C8C8C8;
-    text-align: right;
+    /* text-align: right; */
     font-family: 'Raleway';
     font-size: 19px;
     font-style: normal;

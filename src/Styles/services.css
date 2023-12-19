@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: center;
 }
+
 .service .service-title h3 {
     color: #DCC132;
     font-family: 'Audiowide';
@@ -13,40 +14,134 @@
     font-weight: 400;
     line-height: normal;
 }
-.service .service-title{
+
+.service .service-title {
 
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
 }
-.service .service-title p {
+
+
+
+.service .service-item p {
     text-align: center;
     font-size: 19px;
-    font-weight: 400;   
+    padding: 10px 60px;
+    opacity: 0;
+    color: #121212;
+    font-weight: 400;
+    transition: all ease-in-out 0.4s;
 }
 
+.service .service-item:hover p {
+    opacity: 1;
+}
 
-.service .service-item{
+.service .branding:hover span {
+    color: #121212;
+    font-size: 62px;
+}
+
+.service .ui-ux:hover span {
+    color: #121212;
+    font-size: 62px;
+}
+
+.service .digital:hover span {
+    color: #121212;
+    font-size: 62px;
+}
+
+.service .website:hover span {
+    color: #121212;
+    font-size: 62px;
+}
+
+.service .app:hover span {
+    color: #fff;
+    font-size: 62px;
+}
+
+.service .branding:hover {
+    background-color: #d0b9ee;
+}
+
+.service .ui-ux:hover {
+    background-color: #9e765f;
+}
+
+.service .digital:hover {
+    background-color: #c1b596;
+}
+
+.service .website:hover {
+    background-color: #8ab184;
+}
+
+.service .app:hover {
+    background-color: #8e99c8;
+}
+
+/* .service .service-item p{
+    padding: 10px 60px;
+    display: flex;
+    align-items: center;
+justify-content: center;
+} */
+
+.service .service-item {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 700px;
-    /* justify-content center;    */
+    justify-content: center;
 }
-.service .service-item span{
+
+.service .service-item span {
     color: #FFF;
     text-align: center;
     font-family: 'Raleway';
-    font-size: 62.006px;
+    font-size: 52.006px;
     font-style: normal;
     font-weight: 700;
+    transition: all ease-in-out 0.4s;
     line-height: normal;
 }
+
 .service .service-item img {
     margin: 0;
     padding: 0;
     height: 400px;
- 
-    width: 650px; 
+transition: all ease-in-out 0.4s;
+
+    width: 650px;
+}
+.service .service-item:hover img {
+    animation: grow 1s forwards;
+}
+
+@-webkit-keyframes grow {
+    from {
+        width: 0px;
+        height: 0px;
+    }
+
+    to {
+        width: 650px;
+        height: 400px;
+    }
+}
+
+@keyframes grow {
+    from {
+        width: 0px;
+        height: 0px;
+    }
+
+    to {
+        width: 650px;
+        height: 400px;
+    }
 }

@@ -144,7 +144,7 @@
 .works .work-cards {
 
     display: flex;
-    padding: 2% 0;
+    padding: 2% 10px;
 
     align-items: center;
     height: auto;
@@ -174,8 +174,8 @@
 }
 
 .work-card img {
-    height: 500px;
-    width: 600px;
+    height: 600px;
+    width: 450px;
 }
 
 .work-card .card-text {

@@ -4,7 +4,7 @@ import Header from '../components/Header'
 import GetInTouch from '../components/GetInTouch'
 const TermConditions = () => {
   return (
-    <div className=''>
+    <div className='bg-[#121212]'>
       <Header />
       <div className='term'>
         <div className="term-title">

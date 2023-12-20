@@ -14,7 +14,7 @@ const HomeSlider = () => {
     { width: 1, itemsToShow: 1 },
     { width: 550, itemsToShow: 3 },
     { width: 768, itemsToShow: 3 },
-    { width: 1200, itemsToShow: 2.5 },
+    { width: 1200, itemsToShow: 2.7 },
   ];
   return (
     <>

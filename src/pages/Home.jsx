@@ -8,6 +8,7 @@ import Footer from "../components/Footer";
 import "../Styles/home.css"
 import GetInTouch from "../components/GetInTouch";
 import HomeSlider from "../components/HomeSlider";
+import { Link } from "react-router-dom";
 const Home = (props) => {
   return (
     <>
@@ -39,21 +40,21 @@ const Home = (props) => {
            
             <div className=" flex justify-between  ">  <h3> Our Work.</h3> <span>Opulix Digital has grown into a global agency, partnering with luxury brands  across the world since its inception</span>
                </div>
-               <a href="" className="text-white">View More</a>
+               <Link to="/our-work" className="text-white">View More</Link>
           </div>
           <div className="work-cards">
-            <div className="work-card">
+            <div className="work-card px-3">
               <img src={JHImage} alt="" />
               <div className="card-text py-4 px-2"> <p>2023</p> <p>India</p> </div>
               <h5 className="py-2">JH Branding.</h5>
             </div>
-            <div className="work-card">
+            <div className="work-card px-3">
               <img src={ImagePlace} alt="" />
               <div className="card-text py-4 px-2"> <p>2023</p> <p>India</p> </div>
 
               <h5 className="py-2">Majestic Mercy</h5>
             </div>
-            <div className="work-card">
+            <div className="work-card px-3">
               <img src={ImagePlaceHolder} alt="" />
               <div className="card-text py-4 px-2"> <p>2023</p> <p>India</p> </div>
 

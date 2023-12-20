@@ -60,22 +60,7 @@ const ServiceSlider = () => {
   };
   return (
     <>
-      {/* <div className='carousel-container'>
-      <div className="carousel-text">
-
-      </div>
-      <div className="carousel-image">
-        <Carousel breakPoints={breakPoints}>
-          {images.map((image, i) => (
-            <div key={i} className='items'>
-              <img src={image}  alt="" />
-              <h3>{items[i]}</h3>
-              
-            </div>
-          ))}
-        </Carousel>
-      </div>
-    </div> */}
+    
     <div className="slider-container">
       <div className="carousel-container">
         <div className="content-container">

@@ -1,10 +1,12 @@
 .get-in-touch {
     padding: 4% 0%;
-
+    background-image: url(../assets/Lets_work.jpg);
     width: 100%;
-    background: rgb(131, 58, 180);
-    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
-    height: 70vh;
+    background-position: center;
+    object-fit: contain;
+    background-size: cover;
+    height: 80vh;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,13 +25,15 @@
     color: #000000;
 }
 
-.get-drawer{
+.get-drawer {
     padding: 0% 5%;
     height: auto;
 }
-.get-drawer .drawer-heading{
+
+.get-drawer .drawer-heading {
     padding-top: 2%;
 }
+
 .get-drawer .drawer-heading h3 {
     color: #DCC132;
     font-family: 'Audiowide';
@@ -47,18 +51,144 @@
     font-weight: 500;
     line-height: normal;
 }
-.get-drawer .drawer-text{
-    color: #C8C8C8;
-font-family: 'Raleway';
-font-size: 21px;
-font-style: normal;
-font-weight: 400;
-line-height: 160%; 
-display: flex;
-flex-direction: column;
 
-/* 38.4px */
+.get-drawer .drawer-text {
+    color: #C8C8C8;
+    font-family: 'Raleway';
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+
+    line-height: 160%;
+    display: flex;
+    flex-direction: column;
 }
-.get-drawer .drawer-text span{
-    
+
+.get-in-touch .get-image img {
+    height: 270px;
+    width: 500px;
+    transition: all ease 0.3s;
+}
+
+.get-in-touch .lets-container {
+    padding: 20px;
+    width: 100%;
+
+}
+
+.get-in-touch .lets-container h3 {
+    color: #F5F5F5;
+    font-family: Raleway;
+    transition: all ease 0.3s;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    padding: 10px;
+    line-height: normal;
+    display: none;
+
+}
+
+.get-in-touch .lets-container p {
+    color: #5D5D5D;
+    transition: all ease 0.3s;
+    font-family: Raleway;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    display: flex;
+   text-align: right;
+    padding-right: 20px;
+    line-height: 130%;
+    display: none;
+    /* 31.2px */
+}
+
+.get-in-touch .lets-container-work {
+    padding: 20px;
+}
+
+.get-in-touch .lets-container-work h3 {
+    color: #F5F5F5;
+    transition: all ease 0.3s;
+    font-family: Raleway;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    padding: 10px;
+    line-height: normal;
+    display: none;
+
+}
+
+.get-in-touch .lets-container-work p {
+    transition: all ease 0.3s;
+    color: #5D5D5D;
+    font-family: Raleway;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    display: flex;
+    text-align: right;
+    padding-right: 20px;
+    line-height: 130%;
+    display: none;
+
+}
+
+.get-in-touch .together h3 {
+    color: #F5F5F5;
+    transition: all ease 0.3s;
+    font-family: Raleway;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    padding: 10px;
+    line-height: normal;
+    display: none;
+
+}
+
+.get-in-touch .together p {
+    transition: all ease 0.3s;
+    color: #5D5D5D;
+    font-family: Raleway;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-right: 20px;
+    line-height: 130%;
+    display: none;
+}
+
+.get-in-touch:hover .get-image img {
+    height: 200px;
+    width: 400px;
+}
+
+.get-in-touch:hover.get-in-touch .lets-container-work h3 {
+    display: block;
+}
+
+.get-in-touch:hover.get-in-touch .lets-container-work p {
+    display: block;
+}
+
+.get-in-touch:hover.get-in-touch .lets-container h3 {
+    display: block;
+}
+
+.get-in-touch:hover.get-in-touch .lets-container p {
+    display: block;
+}
+
+.get-in-touch:hover.get-in-touch .together p {
+    display: block;
+}
+
+.get-in-touch:hover.get-in-touch .together h3 {
+    display: block;
 }

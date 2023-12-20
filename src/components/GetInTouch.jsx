@@ -8,8 +8,20 @@ const GetInTouch = () => {
   return (
     <>
       <div className='get-in-touch'>
-        <div className="get-image">
-          <img src={Image} alt="" width='450' height='300' />
+        <div className="get-image flex ">
+          <div className="lets-container">
+            <h3>Let's</h3>
+            <p>Drop us an email</p>
+          </div>
+          <img src={Image} alt="" />
+          <div className="lets-container-work">
+            <h3>Work</h3>
+            <p>Come by for a coffee</p>
+          </div>
+        </div>
+        <div className="together">
+          <h3>together</h3>
+          <p>Say Hii</p>
         </div>
         <div>
           <button onClick={() => setOpen(true)}>Get in touch</button>

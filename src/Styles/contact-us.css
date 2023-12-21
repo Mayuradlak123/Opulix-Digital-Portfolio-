@@ -250,3 +250,28 @@
     line-height: 160%;
     /* 38.4px */
 }
+.contact-us .close-btn svg{
+    height: 73px;
+    width: 73px;
+}
+@media (max-width:768px) {
+    .contact-us .contact-info-left h3 {
+        
+font-size: 24px;
+
+    }
+    .contact-us .close-btn button{
+        display: flex;
+        align-items: flex-end;
+        text-align: right;
+        justify-content: flex-end;
+    }
+    .contact-us .close-btn svg{
+        height: 40px;
+        display: flex;
+        align-items: flex-start;
+        text-align: right;
+        justify-content: flex-start;
+        width: 40px;
+    }
+}

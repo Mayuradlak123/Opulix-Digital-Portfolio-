@@ -26,6 +26,10 @@ const Home = (props) => {
             <div>  Weaving &nbsp; <h4> Technology, </h4> </div>
             <div> <h4> Creativity,</h4>  &nbsp;and  &nbsp;<h4> Strategy,</h4> <br /> </div>
             <div> for Your Brand's Masterpiece </div>
+
+          </div>
+          <div className="home-qoute-reponsive">
+          Weaving Technology, Creativity, and Strategy for Your Brand’s Masterpiece.
           </div>
         </div>
         <div className="services-container">

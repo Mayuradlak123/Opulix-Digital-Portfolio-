@@ -13,7 +13,7 @@ const NotFound = () => {
                 <div className="not-found-heading">
                     <h3>404- Page Not Found</h3>
                     <span className='py-6'>
-                        The page you are looking for might have been removed <br />
+                        The page you are looking for might have been removed 
                         or is temporarily unavailable
                     </span>
                     <Link to="/"> Go to Homepage</Link>

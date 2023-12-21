@@ -5,7 +5,7 @@
     background-position: center;
     object-fit: contain;
     background-size: cover;
-    height: 80vh;
+    height:500px;
 
     display: flex;
     flex-direction: column;
@@ -23,6 +23,36 @@
     background-color: #ffffff;
 
     color: #000000;
+}
+
+@media (max-width: 768px){
+    .get-in-touch {
+        width: 100%;
+        height: 465px;
+        background-image: url(../assets/Lets_work.jpg);
+        display: flex;
+        flex-direction: column;
+        padding: 1%;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .get-in-touch button {
+        display: inline-flex;
+        padding: 10.001px 36=0.003px;
+        justify-content: center;
+        align-items: center;
+        gap: 12.001px;
+        border-radius: 10px;
+        background-color: #ffffff;
+    
+        color: #000000;
+    }
+    .get-in-touch .get-image img {
+        width: 200px;
+        height: 148px;
+        transition: all ease 0.3s;
+    }
+
 }
 
 .get-drawer {
@@ -97,7 +127,7 @@
     font-style: normal;
     font-weight: 500;
     display: flex;
-   text-align: right;
+    text-align: right;
     padding-right: 20px;
     line-height: 130%;
     display: none;

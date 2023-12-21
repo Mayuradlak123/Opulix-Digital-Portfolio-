@@ -178,3 +178,26 @@
         width: 650px;
     }
 }
+@media (max-width:775px){
+    .our-work .work-item .work-title h3 {
+        font-size: 24px;
+    }
+    .our-work .work-item .work-title span{
+   font-size: 14px;
+    }
+    .our-work .product span {
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .our-work .product{
+        padding: 10px 0;
+    }
+    .our-work .product img {
+        padding: 0;
+        margin: 0;
+        transition: all ease-in-out 0.4s;
+        height: 190px;
+        width: 310px;
+    }
+    
+}

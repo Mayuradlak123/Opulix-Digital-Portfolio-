@@ -18,31 +18,31 @@ const Work = () => {
           <span>Check out our selection of our recent <br />
             projects and case studies</span>
         </div>
-       
+
       </div>
       <div className="product-items">
         <div className="product precious">
           <span>Precious Skincare</span>
           <img src={PreciousImage} alt="" />
-          <div className='flex justify-center align-items-center anchor'> <Link className=''>View Case Study</Link>&nbsp; &nbsp;<Link> <FaArrowRight/> </Link> </div>
-  </div>
+          <div className='flex justify-center align-items-center anchor'> <Link className=''>View Case Study</Link>&nbsp; &nbsp;<Link> <FaArrowRight /> </Link> </div>
+        </div>
         <div className="product pa-hotel">
           <span>PA Group Of Hotel</span>
           <img src={HotelImage} alt="" />
-          <div className='flex justify-center align-items-center anchor'> <Link className=''>View Case Study</Link>&nbsp; &nbsp; <Link> <FaArrowRight/> </Link> </div>
- </div>
+          <div className='flex justify-center align-items-center anchor'> <Link className=''>View Case Study</Link>&nbsp; &nbsp; <Link> <FaArrowRight /> </Link> </div>
+        </div>
         <div className="product branding">
           <span>JH Branding </span>
           <img src={BrandingImage} alt="" />
-          <div className='flex justify-center align-items-center anchor'> <Link className=''>View Case Study</Link>&nbsp;  &nbsp; <Link> <FaArrowRight/> </Link> </div>
-  </div>
+          <div className='flex justify-center align-items-center anchor'> <Link className=''>View Case Study</Link>&nbsp;  &nbsp; <Link> <FaArrowRight /> </Link> </div>
+        </div>
         <div className="product sk-iterior">
           <span>SK Iteriors</span>
           <img src={InteriorImage} alt="" />
-         <div className='flex justify-center align-items-center anchor'> <Link className=''>View Case Study</Link> &nbsp; &nbsp; <Link> <FaArrowRight/> </Link> </div>
+          <div className='flex justify-center align-items-center anchor'> <Link className=''>View Case Study</Link> &nbsp; &nbsp; <Link> <FaArrowRight /> </Link> </div>
         </div>
-        </div>
-      <GetInTouch/>
+      </div>
+      <GetInTouch />
     </div>
   )
 }

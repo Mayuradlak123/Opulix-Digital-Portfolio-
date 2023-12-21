@@ -12,24 +12,38 @@ import TermConditions from './pages/TermConditions'
 import ContactUs from './pages/ContactUs'
 import CaseStudy from './components/CaseStudy'
 import NotFound from './components/NotFound'
+import 'react-toastify/dist/ReactToastify.css';
+
+// Import ToastContainer
+import { ToastContainer } from 'react-toastify';
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <div>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide"></link>
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        closeOnClick={true}
+        pauseOnHover={true}
+        draggable={true}
+        progress={undefined}
+      />
+
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide"></link>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway"></link>
-       <BrowserRouter>
+      <BrowserRouter>
         <Routes>
-           <Route  index Component={Home} />
-           <Route  path="/services" Component={Services} />
-           <Route  path="/our-work" Component={Work} />
-           <Route  path="/about-us" Component={AboutUs} />
-           <Route  path="/term-condition" Component={TermConditions} />
-           <Route  path="/privacy-policy" Component={PrivacyPolicy} />
-           <Route  path="/contact-us" Component={ContactUs} />
-           <Route  path="/case-study" Component={CaseStudy} />
-           <Route path='/*' Component={NotFound} />
+          <Route index Component={Home} />
+          <Route path="/services" Component={Services} />
+          <Route path="/our-work" Component={Work} />
+          <Route path="/about-us" Component={AboutUs} />
+          <Route path="/term-condition" Component={TermConditions} />
+          <Route path="/privacy-policy" Component={PrivacyPolicy} />
+          <Route path="/contact-us" Component={ContactUs} />
+          <Route path="/case-study" Component={CaseStudy} />
+          <Route path='/*' Component={NotFound} />
         </Routes>
       </BrowserRouter>
     </div>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useCallback, useState } from 'react'
 import { IoMdClose } from "react-icons/io";
 import Group from "../assets/Group.png"
 import "../Styles/header.css"
@@ -6,18 +6,49 @@ import { Link } from 'react-router-dom';
 import { Drawer } from "antd";
 import Footer from './Footer';
 import "../Styles/contact-us.css"
+import { toast } from 'react-toastify';
+import axios from "axios"
+import 'react-toastify/dist/ReactToastify.css';
 const Header = () => {
     const [isExplored, setIsExplored] = useState(false);
     const [open, setOpen] = useState(false);
 
-    const changeColor = (e) => {
-        if (e.target.style.backgroundColor) {
-            e.target.style.backgroundColor = "";
-        }
-        else {
-            e.target.style.backgroundColor = "#DCC132"
-        }
+    const [services,setServices] =useState([])
+    const [payload, setPayload] = useState({
+      brandName: "",
+      brandDetails: "",
+      services: "",
+      phone: "",
+      countryCode:"",
+      email: "",
+    })
+    const handleSubmit = async () => {
+      const response = await axios.post("http://127.0.0.1:8000/services/create-service", payload);
+      if (response.status == 200) {
+        toast.success("Request sent successfully")
+      }
+      else{
+        toast.error("Failed to send request")
+      }
     }
+    const changeColor = (e,service) => {
+      if (e.target.style.backgroundColor) {
+        e.target.style.backgroundColor = "";
+      }
+      else {
+        e.target.style.backgroundColor = "#DCC132"
+        setServices([...services,service])
+        console.log(services)
+      }
+    }
+    useCallback(()=>{
+      const ser=services.toString();
+      setPayload({...payload,services:ser})
+    },[services])
+    const onChange =(name,value)=>{
+    console.log("Payload: ",payload);
+    setPayload({...payload,[name]:value})
+  }
 
     return (
         <>
@@ -65,52 +96,53 @@ const Header = () => {
                                 </svg>
                             </button>
                             <div className="contact-container">
-                                <div className="contact-info-left">
-                                    <h3>Like what you see</h3>
-                                    <h4>Get in touch with us.</h4>
-                                    <div className="brand-name">
-                                        <label htmlFor="">BRAND NAME</label>
-                                        <input type="text" placeholder='Your company name here' />
-                                    </div>
-                                    <div className="service-details">
-                                        <label htmlFor="">SERVICE DETAILS</label>
-                                        <textarea type="text" placeholder='we want to.' />
-                                    </div>
-                                </div>
-                                <div className="contact-info-right">
-                                    <div className="contact-service">
-                                        <label htmlFor="" className='py-4'>
-                                            SERVICES REQUIRED
-                                        </label>
-                                        <div className="required-service">
-                                            <div onClick={changeColor} className='required-service-item1'>Digital Marketing</div>
-                                            <div onClick={changeColor} className='required-service-item2'>Branding</div>
-                                            <div onClick={changeColor} className='required-service-item3'>Web Design</div>
-                                            <div onClick={changeColor} className='required-service-item4'>App Design </div>
-                                            <div onClick={changeColor} className='required-service-item5'>Development</div>
-                                            <div onClick={changeColor} className='required-service-item6'>Other </div>
-                                            <div onClick={changeColor} className='required-service-item7'>Software Development</div>
-                                        </div>
-                                    </div>
-                                    <div className="contact-email">
-                                        <label htmlFor="">EMAIL ADDRESS</label>
-                                        <input type="email" placeholder='your email here' />
-                                    </div>
-                                    <div className="contact-number">
-                                        <label htmlFor="">PHONE NUMBER (WITH COUNTRY CODE)</label>
-                                        <div className="contact-code-number">
-                                            <input type="text" placeholder='code' className='contact-code' />
-                                            <input type="text" placeholder='Your number here' className='contact-phone' /> </div>
-                                    </div>
-                                    <div className="contact-submit">
-                                        <button>Submit Request</button>
-                                        <span>
-                                            At Opulix Digital, every project is a masterpiece, meticulously crafted to resonate excellence, innovation, and impact. Join us at Opulix Digital, and step into a realm where technology, creativity, and strategy converge, ensuring a digital presence that is not just felt but is unforgettable.
-                                        </span>
-                                        <span>  Your journey to digital distinction begins here!</span>
-                                    </div>
-                                </div>
-                            </div>
+            <div className="contact-info-left">
+              <h3>Like what you see</h3>
+              <h4>Get in touch with us.</h4>
+              <div className="brand-name">
+                <label htmlFor="">BRAND NAME</label>
+                <input type="text" value={payload.brandName} onChange={(e)=>onChange("brandName",e.target.value)} placeholder='Your company name here' />
+              </div>
+              <div className="service-details">
+                <label htmlFor="">SERVICE DETAILS</label>
+                <textarea type="text" value={payload.brandDetails} onChange={(e)=>onChange("brandDetails",e.target.value)} placeholder='we want to.' />
+              </div>
+            </div>
+            <div className="contact-info-right">
+              <div className="contact-service">
+                <label htmlFor="" className='py-4'>
+                  SERVICES REQUIRED
+                </label>
+                <div className="required-service">
+                  <div onClick={(e)=>changeColor(e,"Digital Marketing")} className='required-service-item1'>Digital Marketing</div>
+                  <div onClick={(e)=>changeColor(e,"Branding")} className='required-service-item2'>Branding</div>
+                  <div onClick={(e)=>changeColor(e,"Web Design")} className='required-service-item3'>Web Design</div>
+                  <div onClick={(e)=>changeColor(e,"App Design")} className='required-service-item4'>App Design </div>
+                  <div onClick={(e)=>changeColor(e,"Development")} className='required-service-item5'>Development</div>
+                  <div onClick={(e)=>changeColor(e,"Other")} className='required-service-item6'>Other </div>
+                  <div onClick={(e)=>changeColor(e,"Software Development")} className='required-service-item7'>Software Development</div>
+                </div>
+              </div>
+              <div className="contact-email">
+                <label htmlFor="">EMAIL ADDRESS</label>
+                <input type="email" value={payload.email} onChange={(e)=>onChange("email",e.target.value)} placeholder='your email here' />
+              </div>
+              <div className="contact-number">
+                <label htmlFor="">PHONE NUMBER (WITH COUNTRY CODE)</label>
+                <div className="contact-code-number">
+                  <input type="text" value={payload.countryCode} placeholder='code' onChange={(e)=>onChange("countryCode",e.target.value)} className='contact-code' />
+                  <input type="text" value={payload.phone} placeholder='Your number here' onChange={(e)=>onChange("phone",e.target.value)} className='contact-phone' /> </div>
+              </div>
+              <div className="contact-submit">
+                <button onClick={handleSubmit}>Submit Request</button>
+                <span>
+                  At Opulix Digital, every project is a masterpiece, meticulously crafted to resonate excellence, innovation, and impact. Join us at Opulix Digital, and step into a realm where technology, creativity, and strategy converge, ensuring a digital presence that is not just felt but is unforgettable.
+                </span>
+                <span>  Your journey to digital distinction begins here!</span>
+              </div>
+            </div>
+          </div>
+
 
                         </div>
                     </div>

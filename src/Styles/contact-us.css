@@ -110,6 +110,34 @@
     cursor: pointer;
 }
 
+.contact-us .document {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-us .document label {
+    color: #FFF;
+    font-family: 'Audiowide';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.contact-us .document-input {
+    display: flex;
+
+    width: 546px;
+    height: 48px;
+    color: #FFF;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
 .contact-us .contact-info-right .required-service .required-service-item1 {
     grid-area: 1 / 1 / 2 / 3;
     cursor: pointer;
@@ -250,23 +278,135 @@
     line-height: 160%;
     /* 38.4px */
 }
-.contact-us .close-btn svg{
+
+.contact-us .close-btn svg {
     height: 73px;
     width: 73px;
 }
+
 @media (max-width:768px) {
+    .contact-us {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-container input,textarea{
+        background-color: #121212;
+    }
+    .contact-us .contact-info-left {
+        width: 100%;
+    }
+
+    .contact-us .contact-info-right {
+        width: 100%;
+    }
+
     .contact-us .contact-info-left h3 {
-        
-font-size: 24px;
+
+        font-size: 24px;
 
     }
-    .contact-us .close-btn button{
+
+    .contact-us .contact-info-left h4 {
+
+        font-size: 24px;
+
+    }
+
+    .contact-us .contact-info-left .brand-name {
+        margin: 2% 0;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .contact-us .contact-info-left .brand-name input {
+        display: flex;
+        width: 80vw;
+        padding: 14.401px 24.002px;
+
+    }
+
+    .contact-us .contact-info-left .service-details {
+        margin: 2% 0;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10.002px;
+    }
+
+    .contact-us .contact-info-right .required-service .required-service-item1 {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .contact-us .contact-info-right .required-service .required-service-item2 {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+
+    .contact-us .contact-info-right .required-service .required-service-item3 {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .contact-us .contact-info-right .required-service .required-service-item4 {
+        grid-area: 2 / 2 / 3 / 3;
+    }
+
+    .contact-us .contact-info-right .required-service .required-service-item5 {
+        grid-area: 3 / 1 / 4 / 2;
+    }
+
+    .contact-us .contact-info-right .required-service .required-service-item6 {
+        display: none;
+    }
+
+    .contact-us .contact-info-right .required-service .required-service-item7 {
+        grid-area: 3 / 2 / 4 / 3;
+    }
+
+    .contact-us .contact-info-left .service-details textarea {
+        display: flex;
+        width: 340px;
+        height: 152px;
+        padding: 8px 14px;
+        align-items: flex-start;
+        gap: 6px;
+
+    }
+    .contact-us .contact-info-right .required-service {
+        width: 350px;
+    }
+    .contact-container .contact-email input {
+        display: flex;
+        width: 340px;
+        padding: 8.967px 14.945px;
+        align-items: center;
+        gap: 7.473px;
+    }
+    .contact-us .document-input {
+        width: 340px;
+    }
+    .contact-container .contact-number .contact-code-number .contact-phone {
+        display: flex;
+        width: 270px;
+        padding: 8.967px 14.945px;
+        align-items: center;
+        gap: 7.473px;
+        flex-shrink: 0;
+    }
+
+    .contact-us .close-btn button {
         display: flex;
         align-items: flex-end;
         text-align: right;
         justify-content: flex-end;
     }
-    .contact-us .close-btn svg{
+
+    .contact-us .close-btn svg {
         height: 40px;
         display: flex;
         align-items: flex-start;
@@ -274,4 +414,48 @@ font-size: 24px;
         justify-content: flex-start;
         width: 40px;
     }
+
+    .contact-us .contact-info-left h3 {
+        font-size: 24px;
+    }
+
+    .contact-us .document {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-us .document .document-input {
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-us .contact-info-left label {
+        font-size: 14px;
+    }
+    .contact-us .contact-info-right label {
+        font-size: 14px;
+    }
+    .contact-us .contact-submit{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact-us .contact-submit button{
+        display: inline-flex;
+padding: 12px 10px;
+font-size: 16px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+    }
+    .contact-us .contact-submit{
+        display: none;
+    }
+    .contact-us .contact-container .contact-info-left .contact-submit-responsive{
+        display: block;
+    }
+
+}
+.contact-us .contact-submit-responsive{
+    display: none;
+    width: 100%;
 }

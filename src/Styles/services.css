@@ -114,14 +114,76 @@ justify-content: center;
     margin: 0;
     padding: 0;
     height: 400px;
-transition: all ease-in-out 0.4s;
+    transition: all ease-in-out 0.4s;
 
     width: 650px;
 }
+
 .service .service-item:hover img {
     animation: grow 1s forwards;
 }
 
+@media (max-width: 768px) {
+    .service .service-title h3 {
+        font-size: 24px;
+    }
+
+    .service .service-item {
+
+        height: 450px;
+        justify-content: center;
+    }
+
+    .service .service-item p {
+        font-size: 14px;
+
+    }
+
+    .service .service-item span {
+        font-size: 24px;
+    }
+
+    .service .service-item img {
+        margin: 0;
+        padding: 0;
+        height: 200px;
+        transition: all ease-in-out 0.4s;
+        width: 300px;
+    }
+    .service .service-item:hover img {
+        animation: grow1 1s forwards;
+    }
+    .service .service-item:hover span {
+        font-size: 32px;
+    }
+    .service .service-item:hover p {
+        text-align: justify;
+    }
+}
+
+@-webkit-keyframes grow1 {
+    from {
+        width: 0px;
+        height: 0px;
+    }
+
+    to {
+        width: 300px;
+        height: 200px;
+    }
+}
+
+@keyframes grow1 {
+    from {
+        width: 0px;
+        height: 0px;
+    }
+
+    to {
+        width: 300px;
+        height: 200px;
+    }
+}
 @-webkit-keyframes grow {
     from {
         width: 0px;

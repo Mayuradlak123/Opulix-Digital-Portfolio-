@@ -23,8 +23,10 @@
     align-items: flex-start;
 }
 .carousel-container .slide-image-container {
-    width: 60%;
-    transition: transform 1s ease-in;
+    width: 80%;
+    transition: transform 1s ease-in-out;
+    display: flex;
+   
 
 }
 .carousel-container .content-container P{
@@ -66,7 +68,17 @@ button {
    width: 600px;
     height: 500px;
 }
-
+.slide-image-container .next-image{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
+}
+.slide-image-container .next-image img{
+    width: 200px;
+    height: 400px;
+    overflow: hidden;
+}
 
 /*
 
